@@ -11,15 +11,15 @@
         styles.push("Rock-n-Roll");
         styles[(styles.length-1)/2] = "Classics";
         for(let i = 0; i < styles.length; i++){
-            alert(styles[i]);
+            alert(styles[i]);//Jazz, Classics, Rock-n-Roll
         }
-        alert( styles.shift() );
+        alert( styles.shift() ); //Jazz
         for(let i = 0; i < styles.length; i++){
-            alert(styles[i]);
+            alert(styles[i]);//Classics, Rock-n-Roll
         }
         styles.unshift("Rap", "Reggae");
         for(let i = 0; i < styles.length; i++){
-            alert(styles[i]);
+            alert(styles[i]);//Rap, Reggae, Classics, Rock-n-Roll
         }
         //Jazz, Blues
         //Jazz, Blues, Rock-n-Roll
