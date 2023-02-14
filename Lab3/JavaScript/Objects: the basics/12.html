@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task</title>
+</head>
+<body>
+    <script>
+        'use strict';
+        function readNumber() {
+            let number;
+
+            do {
+                number = prompt("Enter a number please?", 0);
+            } while ( !isFinite(number) );
+
+            if (number === null || number === '') return null;
+
+            return +number;
+        }
+
+        alert(`Number: ${readNumber()}`);
+    </script>
+</body>
+</html>
