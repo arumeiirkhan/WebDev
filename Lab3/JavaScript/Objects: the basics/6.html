@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task</title>
+</head>
+<body>
+    <script>
+        'use strict';
+        let object = {};
+        function A() { return object }
+        function B() { return object }
+
+        let a = new A();
+        let b = new B();
+
+        alert( a == b ); // true
+        /*
+        let obj = {};
+
+        function A() { return obj; }
+        function B() { return obj; }
+
+        alert( new A() == new B() ); // true
+        */
+    </script>
+</body>
+</html>
