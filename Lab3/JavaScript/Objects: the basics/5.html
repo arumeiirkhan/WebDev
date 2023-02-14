@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task</title>
+</head>
+<body>
+    <script>
+        'use strict';
+        function makeUser2() {
+            return {
+                name: "John",
+                ref: this
+            };
+        }
+
+        function makeUser() {
+            return {
+                name: "John",
+                ref() {
+                    return this;
+                }
+            };
+        }
+
+        let user = makeUser();
+
+        alert( user.ref().name );  // John
+    </script>
+</body>
+</html>v
