@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task</title>
+</head>
+<body>
+    <script>
+        'use strict';
+        let styles = ["Jazz", "Blues"];
+        styles.push("Rock-n-Roll");
+        styles[(styles.length-1)/2] = "Classics";
+        for(let i = 0; i < styles.length; i++){
+            alert(styles[i]);
+        }
+        alert( styles.shift() );
+        for(let i = 0; i < styles.length; i++){
+            alert(styles[i]);
+        }
+        styles.unshift("Rap", "Reggae");
+        for(let i = 0; i < styles.length; i++){
+            alert(styles[i]);
+        }
+        //Jazz, Blues
+        //Jazz, Blues, Rock-n-Roll
+        //Jazz, Classics, Rock-n-Roll
+        //Classics, Rock-n-Roll
+        //Rap, Reggae, Classics, Rock-n-Roll
+    </script>
+</body>
+</html>
