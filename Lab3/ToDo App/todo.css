@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    color: #444444;
+}
+
+body {
+    background-color: #f7ede2;
+}
+
+.top {
+    background-color: #ffacad;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top p {
+    color: #fdfdfd;
+}
+.container {
+    margin: 65px auto;
+    max-width: 500px;
+    padding: 45px;
+    background-color: #fdfdfd;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+
+h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #c85a50;
+}
+
+#newtask {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#newtask input[type="text"] {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    background-color: #f7ede2;
+    border-radius: 10px;
+    color: #444444;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+#newtask input[type="text"]::placeholder {
+    color: #9e9e9e;
+}
+
+#newtask button {
+    background-color: #c85a50;
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    color: #fdfdfd;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.task {
+    display: flex;
+    margin-top: 32px;
+    align-items: center;
+    padding: 5px;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.task:last-child {
+    border-bottom: none;
+}
+
+.task .taskname {
+    flex: 1;
+    font-size: 18px;
+    margin-right: 20px;
+    cursor: pointer;
+    color: #444444;
+}
+
+.task .taskname.checked {
+    text-decoration: line-through;
+    color: #9e9e9e;
+}
+
+.task .checked-symbol {
+    font-size: 18px;
+    color: #c85a50;
+}
+
+.task .delete {
+    background-color: #fdfdfd;
+    border: 1px solid #c85a50;
+    border-radius: 7px;
+    cursor: pointer;
+    outline: none;
+    padding: 10px;
+    margin-left: 10px;
+    transition: all 0.2s;
+    width: 11%;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.task .delete:hover,
+.task .delete:focus {
+    background-color: #c85a50;
+    color: #fdfdfd;
+    border-color: #fdfdfd;
+}
+
+.task:hover {
+    background-color: #e1e1e1;
+    border-radius: 6px;
+}
+.task .delete i {
+    color: #c06c84;
+    font-size: 18px;
+}
+
+.task .delete i:hover {
+    color:#fdfdfd;
+}
