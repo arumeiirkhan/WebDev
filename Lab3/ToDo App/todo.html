@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Todo</title>
+  <script src="https://kit.fontawesome.com/29ee0bc57e.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="try.css">
+</head>
+<body>
+<div class="top"><p>ToDo List</p></div>
+<div class="container">
+  <h1>ToDo List</h1>
+  <div id="newtask">
+    <input type="text" placeholder="New Task">
+    <button id="push">Add</button>
+  </div>
+
+  <div id="tasks"></div>
+</div>
+<script type="text/javascript">
+  document.querySelector('#push').onclick = function(){
+    if(document.querySelector('#newtask input').value.length == 0){
+      alert("Please Enter a Task");
+    }
+    else{
+      document.querySelector('#tasks').innerHTML += `
+          <div class="task">
+            <span class="taskname">${document.querySelector('#newtask input').value}</span>
+            <span class="checked-symbol"></span>
+            <button class="delete">
+              <i class="far fa-trash-alt"></i>
+            </button>
+          </div>
+        `;
+      var current_tasks = document.querySelectorAll(".delete");
+      for(var i=0; i<current_tasks.length; i++){
+        current_tasks[i].onclick = function(){
+          this.parentNode.remove();
+        }
+      }
+
+      var checkboxes = document.querySelectorAll(".taskname");
+      for(var i=0; i<checkboxes.length; i++){
+        checkboxes[i].onclick = function(){
+          if(this.classList.contains("checked")){
+            this.classList.remove("checked");
+            this.nextElementSibling.innerHTML = "";
+          }
+          else{
+            this.classList.add("checked");
+            this.nextElementSibling.innerHTML = "&#x2714;";
+          }
+        }
+      }
+    }
+  }
+</script>
+</body>
+</html>
