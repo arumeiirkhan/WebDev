@@ -1,0 +1,42 @@
+{
+    "categories": [
+        {
+            "name": "Category 1",
+            "products": [
+                {
+                    "name": "Product 1",
+                    "price": 9.99,
+                    "description": "This is product 1.",
+                    "count": 10,
+                    "is_active": true
+                },
+                {
+                    "name": "Product 2",
+                    "price": 19.99,
+                    "description": "This is product 2.",
+                    "count": 20,
+                    "is_active": true
+                }
+            ]
+        },
+        {
+            "name": "Category 2",
+            "products": [
+                {
+                    "name": "Product 3",
+                    "price": 29.99,
+                    "description": "This is product 3.",
+                    "count": 5,
+                    "is_active": true
+                },
+                {
+                    "name": "Product 4",
+                    "price": 39.99,
+                    "description": "This is product 4.",
+                    "count": 8,
+                    "is_active": true
+                }
+            ]
+        }
+    ]
+}
